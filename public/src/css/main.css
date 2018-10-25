@@ -1,0 +1,161 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Georgia", Times, serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main section */
+.main {
+    margin: 4.8rem auto;
+    width: 80%;
+}
+
+.edit-quote {
+    text-align: center;
+}
+
+.quotes { 
+    text-align: center;
+}
+
+.quote {
+    background-color: #fff6e0;
+    border: .1rem solid #ccc;
+    box-shadow: .2rem .2rem .2rem #ccc;
+    display: inline-block;
+    padding: 1.6rem;
+    position: relative;
+    width: calc(25% - 4.8rem);
+}
+
+.quote.first-in-line {
+    margin-left: 0;
+}
+
+.quote.last-in-line {
+    margin-right: 0;
+}
+
+.quote .info {
+    color: #ccc;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-top: .8rem;
+}
+
+.quote .info a {
+    color: #ccc;
+}
+
+.quote .info a:hover,
+.quote .info a:active {
+    color: #aaa;
+}
+
+.quote .delete {
+    font-family: sans-serif;
+    position: absolute;
+    right: .4rem;
+    top: 0;
+}
+
+.quote .delete a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.quote .delete a:hover,
+.quote .delete a:active {
+    color: red;
+}
+
+.input-group {
+    margin: 1.6rem 0;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-group input,
+.input-group textarea {
+    border: .1rem solid #ccc;
+    border-radius: .3rem;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .4rem .8rem;
+}
+
+.input-group #author {
+    width: 20rem;
+}
+
+.input-group textarea {
+    width: 40rem;
+}
+
+.btn {
+    background-color: #ffecd2;
+    border: .1rem solid #ccc;
+    border-radius: .3rem;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: inherit;
+    padding: .8rem;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fff6e0;
+}
+
+.info-box {
+    border-radius: .3rem;
+    margin: auto;
+    padding: 1.6rem;
+    text-align: center;
+    width: 35rem;
+}
+
+.info-box.fail {
+    background-color: #ffc2;
+    border: .1rem solid #ff6b6a;
+    color: #ff6b6a;
+}
+
+
+.info-box.success {
+    background-color: #bdffb6;
+    border: .1rem solid #46cc71;
+    color: #46cc71;
+}
+
+.filter-bar {
+    background-color: #f9ffc3;
+    color: black;
+    padding: 1.6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.pagination {
+    font-size: 2rem;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination a:hover,
+.pagination a:active {
+    color: #ccc;
+}
