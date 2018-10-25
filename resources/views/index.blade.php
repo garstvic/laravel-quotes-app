@@ -9,6 +9,22 @@
 @endsection
 
 @section('content')
+    @if(count($errors->all()) > 0)
+        <section class="info-box fail">
+            <div>
+                @foreach($errors->all() as $error)
+                    {{ $error }}
+                @endforeach
+            </div>
+        </section>
+    @endif
+    @if(Session::has('success'))
+        <section class="info-box success">
+            <div>
+                {{ Session::get('success') }}
+            </div>
+        </section>
+    @endif
     <section class="quotes">
         <h1>Latest Quotes</h1>    
         @for($i = 0; $i < count($quotes); $i = $i + 1)
