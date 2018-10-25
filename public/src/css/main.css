@@ -29,6 +29,7 @@ body {
     border: .1rem solid #ccc;
     box-shadow: .2rem .2rem .2rem #ccc;
     display: inline-block;
+    margin: 3.2rem;
     padding: 1.6rem;
     position: relative;
     width: calc(25% - 4.8rem);
