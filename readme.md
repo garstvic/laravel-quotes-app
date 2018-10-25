@@ -1,15 +1,23 @@
 Laravel 5 Quotes Application
 
 // Install framework
+
 $ rm README.md php.ini hello-world.php
+
 $ sudo composer self-update
+
 $ composer create-project laravel/laravel ./laravel --prefer-dist
+
 $ shopt -s dotglob
+
 $ mv laravel/* ./
+
 $ rm -rf laravel
 
 // Apache2
+
 $ sudo vim /etc/apache2/sites-enabled/001-cloud9.conf
+
     // Change this line
     DocumentRoot /home/ubuntu/workspace
 
@@ -19,7 +27,11 @@ $ sudo vim /etc/apache2/sites-enabled/001-cloud9.conf
 $ sudo composer update
 
 // DB
+
+$ mysql-ctl install
+
 $ c9 .env
+
     // Change this lines
     DB_DATABASE=homestead
     DB_USERNAME=homestead
@@ -27,10 +39,23 @@ $ c9 .env
 
     // To following
     DB_DATABASE=c9
-    DB_USERNAME=your-username-in-cloud9
+    DB_USERNAME={{ Root User Name from output of command 'mysql-ctl isntall'}}
     DB_PASSWORD=
 
-$ mysql-ctl install
 $ phpmyadmin-ctl install
+
 $ mysql-ctl start
-Open url from output of phpmyadmin-ctl install : your-username-in-cloud9 and blink password
+
+Open url from output of command 'phpmyadmin-ctl install' : type {{ Root User Name from output of command 'mysql-ctl isntall'}} and blink password
+
+Run Project
+
+// Clone Application from GitHub
+
+$ git clone https://github.com/garstvic/laravel-quotes-app.git
+
+$ rsync -avh ./laravel-quotes-app/ ./
+
+$ rm -rf ./laravel-quotes-app
+
+$ php artisan migrate
