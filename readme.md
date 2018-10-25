@@ -46,7 +46,7 @@ $ phpmyadmin-ctl install
 
 $ mysql-ctl start
 
-Open url from output of command 'phpmyadmin-ctl install' : type {{ Root User Name from output of command 'mysql-ctl isntall'}} and blink password
+Open url from output of command 'phpmyadmin-ctl install' : type {{ Root User Name from output of command 'mysql-ctl install'}} and blink password
 
 Run Project
 
