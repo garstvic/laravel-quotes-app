@@ -12,7 +12,7 @@
     <section class="quotes">
         <h1>Latest Quotes</h1>    
         <article class="quote">
-            <div class="delete"><a href="#">x</a></div>QuoteTex
+            <div class="delete"><a href="#">x</a></div>QuoteTetx
             <div class="info">Create by <a href="">V1CTH0R</a> on ...</div>
         </article>
         Pagination
