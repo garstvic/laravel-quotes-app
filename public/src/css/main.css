@@ -161,3 +161,7 @@ body {
 .pagination a:active {
     color: #ccc;
 }
+
+section.login {
+    text-align: center;
+}
