@@ -11,6 +11,12 @@ class AdminController extends Controller
 {
     public function getLogin()
     {
+        if (Auth::check()) {
+            $authors = Author::all(); 
+            
+            return redirect()->route('admin.dashboard');
+        }
+        
         return view('admin.login');
     }
     

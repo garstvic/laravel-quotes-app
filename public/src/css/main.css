@@ -1,10 +1,12 @@
 html {
     font-size: 10px;
+    height: 100%;
 }
 
 body {
     font-family: "Georgia", Times, serif;
     font-size: 1.6rem;
+    height: 100%;
     line-height: 2rem;
     margin: 0;
     padding: 0;
@@ -12,7 +14,10 @@ body {
 
 /* Main section */
 .main {
+    height: auto;
     margin: 4.8rem auto;
+    min-height: 100%;
+    padding-bottom: 4.2rem;
     width: 80%;
 }
 
@@ -163,5 +168,36 @@ body {
 }
 
 section.login {
+    text-align: center;
+}
+
+header {
+    background-color: #ccc;
+    height: 2rem;
+    padding: 1.6rem 2.6rem;
+}
+
+header .title {
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header .nav {
+    float: right;
+}
+
+header .nav a {
+    text-decoration: none;
+}
+
+footer {
+    
+    background-color: #efefef;
+    clear: both;
+    height: 2rem;
+    margin-top: -4.2rem;
+    padding: 1.6rem 2.6rem;
+    position: relative;
     text-align: center;
 }

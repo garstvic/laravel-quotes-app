@@ -58,4 +58,8 @@ $ rsync -avh ./laravel-quotes-app/ ./
 
 $ rm -rf ./laravel-quotes-app
 
+$ composer dump-autoload
+
 $ php artisan migrate
+
+$ php artisan db:seed
