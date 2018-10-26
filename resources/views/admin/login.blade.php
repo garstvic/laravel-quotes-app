@@ -10,7 +10,7 @@
 @endif
 @if(Session::has('fail'))
     <section class="info-box fail">
-        {{ Session::has('fail') }}
+        {{ Session::get('fail') }}
     </section>
 @endif
 <section class="login">
