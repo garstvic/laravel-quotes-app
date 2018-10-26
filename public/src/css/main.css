@@ -128,7 +128,7 @@ body {
 }
 
 .info-box.fail {
-    background-color: #ffc2;
+    background-color: #ffc2af;
     border: .1rem solid #ff6b6a;
     color: #ff6b6a;
 }
