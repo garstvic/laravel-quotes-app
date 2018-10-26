@@ -1,0 +1,1 @@
+<h1>Thank {{ $name }} for creating a Quote!</h1>
